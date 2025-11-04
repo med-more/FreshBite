@@ -1,0 +1,26 @@
+:root {
+    --vert-clair: #E8F5E9;
+    --vert-fonce: #388E3C;
+    --vert-moyen: #66BB6A;
+    --jaune-clair: #FFF9C4;
+    --jaune: #FFD54F;
+    --blanc: #FFFFFF;
+    --gris-fonce: #212121;
+    --gris-moyen: #757575;
+    --gris-moyen: #757575;
+    --gris-clair: #BDBDBD;
+    --rouge: #E53935;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--gris-fonce);
+    line-height: 1.6;
+    overflow-x: hidden;
+}

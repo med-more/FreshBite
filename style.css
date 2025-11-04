@@ -24,3 +24,81 @@ body{
     line-height: 1.6;
     overflow-x: hidden;
 }
+
+/* navbar */
+.navbar{
+    background-color: var(--blanc);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--vert-fonce);
+    text-decoration: none;
+}
+
+.logo span{
+    color: var(--gris-fonce);
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-menu a{
+    color: var(--gris-fonce);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.nav-menu a:hover{
+    color: var(--vert-fonce);
+}
+
+.nav-menu a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--vert-fonce);
+    transition: width 0.3s;
+}
+
+.nav-menu a:hover::after{
+    width: 100%;
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span{
+    width: 25px;
+    height: 3px;
+    background-color: var(--gris-fonce);
+    transition: all 0.3s;
+}

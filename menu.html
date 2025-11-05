@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
     <nav class="navbar">
@@ -23,6 +25,118 @@
             </div>
         </div>
     </nav>
+
+
+    <section class="section section-green">
+        <div class="container">
+            <p class="section-subtitle">NOTRE MENU</p>
+            <h2 class="section-title">Découvrez Nos Plats</h2>
+
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Tous</button>
+                <button class="category-btn" data-category="breakfast">Petit-déjeuner</button>
+                <button class="category-btn" data-category="lunch">Déjeuner</button>
+                <button class="category-btn" data-category="drinks">Boissons</button>
+            </div>
+
+            <div class="menu-grid" id="menuGrid">
+
+                <!-- breakfast -->
+                <div class="menu-card" data-category="breakfast">
+                    <img src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?w=400" alt="Petit-déjeuner complet" class="menu-card-image">
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-name">Petit-déjeuner Complet</h3>
+                        <p class="menu-card-description">Œufs, avocat, tomates, pain complet et fruits frais</p>
+                        <p class="menu-card-price">45 DH</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="breakfast">
+                    <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400" alt="Pancakes healthy" class="menu-card-image">
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-name">Pancakes Healthy</h3>
+                        <p class="menu-card-description">Pancakes à la farine complète avec fruits et sirop d'érable</p>
+                        <p class="menu-card-price">35 DH</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="breakfast">
+                    <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400" alt="Smoothie bowl" class="menu-card-image">
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-name">Smoothie Bowl</h3>
+                        <p class="menu-card-description">Bowl de fruits frais, granola et superfoods</p>
+                        <p class="menu-card-price">40 DH</p>
+                    </div>
+                </div>
+
+                <!-- lunch -->
+                 <div class="menu-card" data-category="lunch">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" alt="Salade healthy" class="menu-card-image">
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-name">Salade Healthy</h3>
+                        <p class="menu-card-description">Mélange de légumes frais, quinoa et vinaigrette maison</p>
+                        <p class="menu-card-price">55 DH</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="lunch">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400" alt="Poke bowl" class="menu-card-image">
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-name">Poke Bowl</h3>
+                        <p class="menu-card-description">Saumon frais, riz, avocat, légumes et sauce soja</p>
+                        <p class="menu-card-price">75 DH</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="lunch">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400" alt="Wrap healthy" class="menu-card-image">
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-name">Wrap Healthy</h3>
+                        <p class="menu-card-description">Tortilla complète, poulet grillé, légumes et sauce</p>
+                        <p class="menu-card-price">50 DH</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="lunch">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Burger healthy" class="menu-card-image">
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-name">Burger Healthy</h3>
+                        <p class="menu-card-description">Pain complet, steak végétal, légumes et frites de patates douces</p>
+                        <p class="menu-card-price">65 DH</p>
+                    </div>
+                </div>
+
+                <!-- drinks -->
+
+                <div class="menu-card" data-category="drinks">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="Smoothie vert" class="menu-card-image">
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-name">Smoothie Vert</h3>
+                        <p class="menu-card-description">Épinards, banane, pomme et gingembre</p>
+                        <p class="menu-card-price">25 DH</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="drinks">
+                    <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?w=400" alt="Jus frais" class="menu-card-image">
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-name">Jus Frais</h3>
+                        <p class="menu-card-description">Jus de fruits et légumes pressés à froid</p>
+                        <p class="menu-card-price">20 DH</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="drinks">
+                    <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=400" alt="Thé glacé" class="menu-card-image">
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-name">Thé Glacé Maison</h3>
+                        <p class="menu-card-description">Thé vert glacé avec citron et menthe fraîche</p>
+                        <p class="menu-card-price">18 DH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
          <footer class="footer">

@@ -257,38 +257,8 @@ body{
     width: 100%;
 }
 
-.section{
-    padding: 80px 20px;
-}
-
-.section-white{
-    background-color: var(--blanc);
-}
-
 .section-green{
     background-color: var(--vert-clair);
-}
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section-subtitle{
-    color: var(--vert-moyen);
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.section-title{
-    font-size: 40px;
-    font-weight: bold;
-    color: var(--gris-fonce);
-    text-align: center;
-    margin-bottom: 50px;
 }
 
 .about-text{
@@ -297,16 +267,6 @@ body{
     text-align: center;
 }
 
-.about-text p{
-    color: var(--gris-moyen);
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 30px;
-}
-
-.about-text p:last-child{
-    margin-bottom: 0;
-}
 
 .menu-categories{
     display: flex;
@@ -377,4 +337,38 @@ body{
     font-size: 24px;
     font-weight: bold;
     color: var(--vert-fonce);
+}
+
+/* button de scroll */
+.scroll-down{
+    text-align: center;
+    margin-top: 40px;
+}
+.scroll-button{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--vert-fonce);
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s;
+}
+.scroll-button:hover{
+    transform: translateY(5px);
+}
+.scroll-button i{
+    font-size: 24px;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-10px);
+    }
+    60%{
+        transform: translateY(-5px);
+    }
 }

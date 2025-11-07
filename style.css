@@ -563,4 +563,14 @@ body{
     .nav-menu.active{
         left: 0;
     }
+
+    .hero-content{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-title{
+        font-size: 32px;
+    }
+    
 }

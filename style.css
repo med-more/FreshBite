@@ -424,3 +424,118 @@ body{
 .gallery-item:hover img{
     transform: scale(1.1);
 }
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-form{
+    background-color: var(--blanc);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section-title{
+    margin-bottom: 20px;
+    color: var(--gris-fonce);
+}
+
+.form-group{
+    margin-bottom: 25px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--gris-fonce);
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--gris-clair);
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    outline: none;
+    border-color: var(--vert-moyen);
+}
+
+.form-group textarea{
+    resize: vertical;
+    min-height: 150px;
+}
+
+.error-message{
+    color: var(--rouge);
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.error-message.show{
+    display: block;
+}
+
+.success-message{
+    background-color: var(--vert-clair);
+    color: var(--vert-fonce);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: none;
+    text-align: center;
+    font-weight: 600;
+}
+
+.success-message.show{
+    display: block;
+}
+
+.map-container{
+    width: 100%;
+    height: 400px;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.contact-info-box{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--blanc);
+    border-radius: 10px;
+}
+
+.contact-info-box p{
+    margin-bottom: 10px;
+}
+
+.contact-info-box p strong{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-info-text{
+    color: var(--gris-moyen);
+    margin-bottom: 15px;
+}
+
+.contact-info-text:last-child{
+    margin-bottom: 0;
+}

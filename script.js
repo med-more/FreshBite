@@ -98,4 +98,21 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         });
     }
+
+    const scrollButton = document.querySelector('.scroll-button[href="#menu-du-jour"]');
+
+    if (scrollButton) {
+        scrollButton.addEventListener('click', function(e){
+            e.preventDefault();
+
+            const target = document.getElementById('menu-du-jour');
+
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    }
 })

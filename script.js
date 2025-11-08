@@ -43,5 +43,59 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     }
 
-    
+    const contactForm = document.getElementById('contactForm');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            const nameError = document.getElementById('nameError');
+            const emailError = document.getElementById('emailError');
+            const messageError = document.getElementById('messageError');
+            const successMessage = document.getElementById('successMessage');
+
+            let isValid = true;
+
+            nameError.classList.remove('show');
+            if (name === '') {
+                nameError.classList.add('show');
+                isValid = false;
+            }
+
+            emailError.classList.remove('show');
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === '') {
+                emailError.textContent = 'L\'email est obligatoire';
+                emailError.classList.add('show');
+                isValid = false;
+            } else if (!emailPattern.test(email)){
+                emailError.textContent = 'L\'email est invalide';
+                emailError.classList.add('show');
+                isValid = false;
+            }
+
+            messageError.classList.remove('show');
+            if (message === '') {
+                messageError.classList.add('show');
+                isValid = false;
+            }
+
+            if (isValid) {
+                successMessage.classList.remove('show');
+                setTimeout(function(){
+                    successMessage.classList.add('show');
+
+                    document.getElementById('name').value = '';
+                    document.getElementById('email').value = '';
+                    document.getElementById('message').value = '';
+
+                    setTimeout(function(){
+                        successMessage.classList.remove('show');
+                    }, 5000)
+                }, 100)
+            }
+        });
+    }
 })
